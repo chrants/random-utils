@@ -1,10 +1,10 @@
 # Returns a number >= min, but <= max
-def random min, max
+def random min, max, options={}
 	rand(max - min) + min
 end
 
 # Returns a random upper or lowercase letter
-def rand_let
+def rand_let options={}
 	uppercase = random(0, 2) == 1
 	uppercaseLet = random(65, 91).chr
 	letter = (uppercase) ? (uppercaseLet) : (uppercaseLet.downcase) 
@@ -12,7 +12,7 @@ def rand_let
 end
 
 # Returns a random phone number w/ an area code of 210 (no international prefixes)
-def rand_phone
+def rand_phone options={}
 	"210#{random(1111111, 9999999).to_s}"
 end
 
