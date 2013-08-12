@@ -10,6 +10,6 @@ Gem::Specification.new do |s|
   s.description = "Efficient random number and alpha-numeric string ('tokens') utilities"
   s.author      = 'thejava'
   s.email       = 'tschoepe.christian@gmail.com'
-  s.files       = ["lib/example.rb"]
-  s.homepage    = 'https://rubygems.org/gems/example'
+  s.files       = get_files()
+  #s.homepage    = 'https://rubygems.org/gems/example'
 end
